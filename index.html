@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Arctic Delivery</title>
 </head>
 <body>
     <div class="wrapper">
@@ -33,8 +33,23 @@
             <div class="calculator">
                 <h3>Delivery costs</h3>
                     <p>From To</p>
-                <p>Route:<input type = "text"><img src="./assets/Ukraineflag.jpg" alt="country1"><img src="./assets/switch.png" alt="switch"><input type = "text"><img src="./assets/usaflag.png" alt="country2"></p>
-                <p>Shipment type:<input type = "text"><img src="./assets/cargotype.png" alt="cargotype"></p>
+                <p>Route: <select name="Route1" id="Route1">
+                    <option value="UA">UA</option>
+                    <option value="USA">USA</option>
+                </select>
+                <img src="./assets/Ukraineflag.jpg" alt="country1"><img src="./assets/switch.png" alt="switch">
+                <select name="Route2" id="Route2">
+                    <option value="USA">USA</option>
+                    <option value="UA">UA</option>
+                </select>
+                <img src="./assets/usaflag.png" alt="country2">
+                </p>
+                <p>Shipment type: <select name="Shipping" id="Shipping">
+                    <option value="Cargo">Cargo</option>
+                    <option value="Document">Document</option>
+                </select>
+                <img src="./assets/cargotype.png" alt="cargotype">
+                </p>
                 <p>Weight:<input type = "number"><img src="./assets/kg.png" alt="kg"></p>
                 <button>Calculate</button> <span>0.00<img src="./assets/$.png" alt="$"></span>
             </div>
